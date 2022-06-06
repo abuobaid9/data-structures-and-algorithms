@@ -1,3 +1,5 @@
+
+
 'use strict';
 
 /* ------------------------------------------------------------------------------------------------
@@ -11,6 +13,12 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 
 const raisedToTheThird = (arr) => {
   // Solution code here...
+  let newArr = [];
+  arr.forEach(e => {
+    e = Math.pow(e, 3);
+    newArr.push(e);
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -22,6 +30,9 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 
 const addOne = (arr) => {
   // Solution code here...
+  let newArr = arr.map(element =>
+    element + 1);
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -32,6 +43,10 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 
 const addQuestion = (arr) => {
   // Solution code here...
+  let newArr = arr.map(element => {
+    return `${element}?`;
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -45,6 +60,12 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 ------------------------------------------------------------------------------------------------ */
 const forLoopTwoToThe = (arr) => {
   // Solution code here...
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let powerElement = Math.pow(2, arr[i]);
+    newArr.push(powerElement);
+  }
+  return newArr;
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -54,6 +75,13 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+  let newArr = [];
+  arr.forEach(e => {
+    e = Math.pow(2, e);
+    newArr.push(e);
+  });
+  return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -64,6 +92,12 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 
 const mapTwoToThe = (arr) => {
   // Solution code here...
+  let newArr = [];
+  arr.map(e => {
+    e = Math.pow(2, e);
+    newArr.push(e);
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -295,3 +329,6 @@ xdescribe('Testing challenge 10', () => {
     expect(extractStats(snorlaxStats.stats).length).toStrictEqual(3);
   });
 });
+
+
+
