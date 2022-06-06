@@ -97,3 +97,18 @@ Singly linked list can be defined as the collection of ordered set of elements. 
 2. includ : its take a data and compare it whit the existing data , if found it return true , if not return false.
 
 3. toString : its take noting and retur all the data in the head.
+
+
+# Binary Search of Sorted Array
+
+<!-- Description of the challenge -->
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the value of the search key, or -1 if the element is not in the array.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![wihteborad](./array-binary-search/Screenshot%20(80).png)
+
+## Approach & Efficiency
+<!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+
+- Big O time is : O(log n) / space : O(1)
