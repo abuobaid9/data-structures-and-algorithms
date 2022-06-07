@@ -31,13 +31,13 @@ class LinkedList {
       console.log(`{${current.data}}->`);
       current = current.next;
     }
-    return console.log(" NULL");
+    return console.log(' NULL');
   }
 }
 const ll = new LinkedList();
-ll.insert("a");
-ll.insert("b");
-ll.insert("c");
+ll.insert('a');
+ll.insert('b');
+ll.insert('c');
 
 ll.includes(200);
 ll.tooString();
