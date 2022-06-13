@@ -13,3 +13,6 @@
 ---
 
 [Array Binary Search](./array-binary-search/README.md)
+
+---
+[linked List Insertions](./linked-list-insertions/README.md)
