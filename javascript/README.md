@@ -24,3 +24,7 @@
 ---
 
 [Stack & Queue](./StackAndQueue/README.md)
+
+---
+
+[PseudoQueue](./stack-queue-pseudo/README.md)
