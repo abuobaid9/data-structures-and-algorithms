@@ -51,3 +51,4 @@ ll.insert(66);
 ll.insert(5);
 ll.insert(6);
 ll.kth(2);
+module.exports = LinkedList;
