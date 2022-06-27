@@ -28,3 +28,7 @@
 ---
 
 [PseudoQueue](./stack-queue-pseudo/README.md)
+
+---
+
+[stack-queue-animal-shelter](./stack-queue-animal-shelter/README.md)
