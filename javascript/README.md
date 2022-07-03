@@ -32,3 +32,7 @@
 ---
 
 [stack-queue-animal-shelter](./stack-queue-animal-shelter/README.md)
+
+---
+
+[Trees](./trees/README.md)
