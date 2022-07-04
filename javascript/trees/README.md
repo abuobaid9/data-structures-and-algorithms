@@ -24,6 +24,10 @@
   - Argument: value
   - Returns: boolean indicating whether or not the value is in the tree at least once.
 
+## Whiteboard Process
+
+![img](./img/Screenshot%20(145).png)
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
