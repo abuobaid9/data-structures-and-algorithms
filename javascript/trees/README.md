@@ -10,6 +10,9 @@
       - pre order
       - in order
       - post order which returns an array of the values, ordered appropriately.
+      - find maximum value
+        - Arguments: none
+        - Returns: number
 - Binary Search Tree
   - Create a Binary Search Tree class
     - This class should be a sub-class (or your languages equivalent) of the Binary Tree Class, with the following additional methods:
@@ -25,3 +28,8 @@
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 The big O For Time And Space = big O(n)
+
+## Image
+
+![img](./img/Screenshot%20(143).png)
+![img](./img/Screenshot%20(144).png)

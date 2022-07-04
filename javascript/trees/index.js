@@ -40,6 +40,10 @@ three.right = five;
 
 tree = new BinaryTree(one);
 
+console.log(tree.getMaxVal(one));
+
+
+
 let preOrder = tree.preOrder();
 console.log('pre order: ', preOrder);
 //pre order > 1 , 2 , 6 , 7 , 8 , 9 , 3 , 4 , 5
