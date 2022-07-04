@@ -46,6 +46,21 @@ class BinaryTree {
     traverse(this.root);
     return result;
   }
+  getMaxVal(node) {
+
+    if (node === null)
+      return Number.MIN_VALUE;
+
+    let res = node.value;
+    let lres = this.getMaxVal(node.left);
+    let rres = this.getMaxVal(node.right);
+
+    if (lres > res)
+      res = lres;
+    if (rres > res)
+      res = rres;
+    return res;
+  }
 }
 
 module.exports = BinaryTree;

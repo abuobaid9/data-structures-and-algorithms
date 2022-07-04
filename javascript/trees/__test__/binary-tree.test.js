@@ -1,10 +1,10 @@
 'use strict';
 const BinaryTree = require('../lib/binary-tree');
-const BinarySearchTree = require('../lib/bst');
+// const BinarySearchTree = require('../lib/bst');
 const Node = require('../lib/node');
 
 let tree = null;
-let searchTree =null;
+// let searchTree =null;
 describe('Binary Tree', () => {
   beforeAll(() => {
     let one = new Node(1);
@@ -25,7 +25,7 @@ describe('Binary Tree', () => {
     three.left = four;
     three.right = five;
     tree = new BinaryTree(one);
-    searchTree =new BinarySearchTree(one);
+    // searchTree =new BinarySearchTree(one);
   });
 
   test('Can successfully instantiate an empty tree', () => {
@@ -59,5 +59,27 @@ describe('Binary Tree', () => {
     let expectedOutput = [8, 9, 7, 6, 2, 4, 5, 3, 1];
     let postOrder = tree.postOrder();
     expect(postOrder).toEqual(expectedOutput);
+  });
+  test('Git Max Value', () => {
+    let one = new Node(1);
+    let two = new Node(2);
+    let three = new Node(3);
+    let four = new Node(4);
+    let five = new Node(5);
+    let six = new Node(6);
+    let seven = new Node(7);
+    let eight = new Node(8);
+    let nine = new Node(9);
+    one.left = two;
+    one.right = three;
+    two.left = six;
+    six.right = seven;
+    seven.left = eight;
+    seven.right = nine;
+    three.left = four;
+    three.right = five;
+    tree = new BinaryTree(one);
+    let postOrder = tree.getMaxVal(one);
+    expect(postOrder).toEqual(9);
   });
 });
