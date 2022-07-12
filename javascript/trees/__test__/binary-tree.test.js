@@ -2,7 +2,7 @@
 const BinaryTree = require('../lib/binary-tree');
 // const BinarySearchTree = require('../lib/bst');
 const Node = require('../lib/node');
-
+const BFS =require('../lib/bfs');
 let tree = null;
 // let searchTree =null;
 describe('Binary Tree', () => {
@@ -81,5 +81,19 @@ describe('Binary Tree', () => {
     tree = new BinaryTree(one);
     let postOrder = tree.getMaxVal(one);
     expect(postOrder).toEqual(9);
+  });
+  test('breadth first', () => {
+    const testTree = new BFS();
+    testTree.root = new Node("H");
+    testTree.root.children.push(new Node("e"));
+    testTree.root.children.push(new Node("l"));
+    testTree.root.children[0].children.push(new Node("l"));
+    testTree.root.children[0].children.push(new Node("o"));
+    testTree.root.children[0].children.push(new Node("W"));
+    testTree.root.children[1].children.push(new Node("o"));
+    testTree.root.children[1].children.push(new Node("r"));
+    testTree.root.children[1].children.push(new Node("l"));
+    let test = testTree.traverseBFS().value;
+    expect(test).toEqual('H e l l o w o r l');
   });
 });
