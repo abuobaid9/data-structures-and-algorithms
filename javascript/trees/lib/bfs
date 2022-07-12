@@ -1,32 +1,26 @@
 'use strict';
-const Node = require('./node');
+const Node =require('./node');
 const Queue = require('./Queue');
 class BFS {
   constructor(root = null) {
     this.root = root;
   }
-  breadthFirstSearch() {
-    // create a queue and a variable to store the values of nodes visited
-    let queue = [];
-    let result = [];
-    // initiate a node variable to store the current node
-    let node;
-    // push the root node to the queue
-    queue.push(this.root);
-    // loop as long as there is anything in the queue
-    while (queue.length) {
-      // dequeue a node from the queue
-      // push the visited node into the result
-      node = queue.shift();
-      result.push(node);
-      // push children to the queue
-      if (node.left) queue.push(node.left);
-      if (node.right) queue.push(node.right);
-
+  traverseBFS() {
+    if (!this.root) {
+      return false;
     }
-    //return final traversed nodes array
-    return result;
-
+    const queue = new Queue();
+    const treeValues = [];
+    queue.enqueue(this.root);
+    while (queue.size !== 0) {
+      const nodeChildren = queue.first.value.children;
+      if (nodeChildren.length !== 0) {
+        nodeChildren.forEach(child => queue.enqueue(child));
+      }
+      treeValues.push(queue.first.value);
+      queue.dequeue();
+    }
+    return treeValues;
   }
 }
 module.exports = BFS;
@@ -41,7 +35,7 @@ testTree.root.children[0].children.push(new Node("W"));
 testTree.root.children[1].children.push(new Node("o"));
 testTree.root.children[1].children.push(new Node("r"));
 testTree.root.children[1].children.push(new Node("l"));
-const test = testTree.traverseBFS().values;
+const test=testTree.traverseBFS().values;
 console.log(test);
 
 // const testTree2 = new BFS();
