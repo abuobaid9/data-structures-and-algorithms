@@ -24,9 +24,14 @@
   - Argument: value
   - Returns: boolean indicating whether or not the value is in the tree at least once.
 
+- Write a function called breadth first
+  - Arguments: tree
+  - Return: list of all values in the tree, in the order they were encountered
+
 ## Whiteboard Process
 
 ![img](./img/Screenshot%20(145).png)
+![img](./img/bfs.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->

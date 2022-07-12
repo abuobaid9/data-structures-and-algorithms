@@ -93,7 +93,7 @@ describe('Binary Tree', () => {
     testTree.root.children[1].children.push(new Node("o"));
     testTree.root.children[1].children.push(new Node("r"));
     testTree.root.children[1].children.push(new Node("l"));
-    let test = testTree.traverseBFS().value;
+    let test = testTree.traverseBFS();
     expect(test).toEqual('H e l l o w o r l');
   });
 });
