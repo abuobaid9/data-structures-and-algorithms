@@ -28,10 +28,18 @@
   - Arguments: tree
   - Return: list of all values in the tree, in the order they were encountered
 
+  - Write a function called fizz buzz tree
+    - If the value is divisible by 3, replace the value with “Fizz”
+    - If the value is divisible by 5, replace the value with “Buzz”
+    - If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+    - If the value is not divisible by 3 or 5, simply turn the number into a String.
+
 ## Whiteboard Process
 
 ![img](./img/Screenshot%20(145).png)
 ![img](./img/bfs.png)
+![img](./img/tfb.png)
+
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -42,3 +50,4 @@ The big O For Time And Space = big O(n)
 
 ![img](./img/Screenshot%20(143).png)
 ![img](./img/Screenshot%20(144).png)
+![img](./img/Screenshot%20(147).png)
