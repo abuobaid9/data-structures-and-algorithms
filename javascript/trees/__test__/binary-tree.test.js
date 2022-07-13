@@ -98,30 +98,30 @@ describe('Binary Tree', () => {
   //   expect(test).toEqual('H e l l o w o r l');
   // });
   it('If the value is divisible by 3, replace the value with “Fizz”', () => {
-    let value = new Node(3);
-    let tree = new BinaryTree(value);
+    let three = new Node(3);
+    let tree = new BinaryTree(three);
     let expextedTree = fizzBuzzTree(tree);
     expect(expextedTree.root.value).toEqual('Fizz');
   });
 
   it('If the value is divisible by 5, replace the value with “Buzz”', () => {
-    let value = new Node(5);
-    let tree = new BinaryTree(value);
+    let five = new Node(5);
+    let tree = new BinaryTree(five);
     let expextedTree = fizzBuzzTree(tree);
     expect(expextedTree.root.value).toEqual('Buzz');
   });
 
   it('If the value is divisible by 3 and 5, replace the value with “FizzBuzz”', () => {
-    let value = new Node(15);
-    let tree = new BinaryTree(value);
+    let fifteen = new Node(15);
+    let tree = new BinaryTree(fifteen);
     let expextedTree = fizzBuzzTree(tree);
     expect(expextedTree.root.value).toEqual('FizzBuzz');
   });
 
   it('If the value is not divisible by 3 or 5, simply turn the number into a String.', () => {
-    let value = new Node(8);
-    let tree = new BinaryTree(value);
+    let two = new Node(2);
+    let tree = new BinaryTree(two);
     let expextedTree = fizzBuzzTree(tree);
-    expect(expextedTree.root.value).toEqual(8);
+    expect(expextedTree.root.value).toEqual(2);
   });
 });
