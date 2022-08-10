@@ -36,3 +36,8 @@
 ---
 
 [Trees](./trees/README.md)
+
+---
+
+[Insertion Sort](./sort-array/README.md)
+
