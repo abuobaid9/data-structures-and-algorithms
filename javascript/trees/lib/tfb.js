@@ -8,12 +8,8 @@ function fizzBuzzTree(tree) {
   if (tree.root) {
     current = tree.root;
   } else if (tree.value) {
-    // If it's a subtree being evaluated recursively,
-    // it won't have a `root` property
     current = tree;
   } else {
-    // Return the argument if it doesn't have a root or value.
-    // Maybe it's a tree with an empty root?
     return tree;
   }
   if (current.value % 3 === 0 && current.value % 5 === 0) {
