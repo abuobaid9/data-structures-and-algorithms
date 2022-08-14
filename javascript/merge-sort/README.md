@@ -7,6 +7,7 @@ If the array has multiple elements, we split the array into halves and recursive
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![img](./img/whiteBorad.png)
+![img](./img/pass1.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
