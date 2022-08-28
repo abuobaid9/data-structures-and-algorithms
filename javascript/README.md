@@ -6,6 +6,6 @@
 | [Array Binary Search](./array-binary-search/README.md) |   [linked List Insertions](./linked-list-insertions/README.md) | [linked List zip](./linked-list-zip/README.md) |
 | [Stack & Queue](./StackAndQueue/README.md) | [PseudoQueue](./stack-queue-pseudo/README.md)|[stack-queue-animal-shelter](./stack-queue-animal-shelter/README.md)|
 | [Trees](./trees/README.md) | [Insertion Sort](./sort-array/README.md) |   [Merge Sort](./merge-sort/README.md) |
-| [Quick Sort](./quick-sort/README.md) | [Hash Table](./hash-table/README.md) |  |
+| [Quick Sort](./quick-sort/README.md) | [Hash Table](./hash-table/README.md) |[Tree Intersection](./treeIntersection/README.md)  |
 
 <!-- | col 3 is | right-aligned |    $1 | -->

@@ -14,4 +14,4 @@ The big O For Time And Space = big O(n)
 
 ## Image
 
-![img](./img/test.png).png)
+![img](./img/test.png)
