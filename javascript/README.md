@@ -7,5 +7,6 @@
 | [Stack & Queue](./StackAndQueue/README.md) | [PseudoQueue](./stack-queue-pseudo/README.md)|[stack-queue-animal-shelter](./stack-queue-animal-shelter/README.md)|
 | [Trees](./trees/README.md) | [Insertion Sort](./sort-array/README.md) |   [Merge Sort](./merge-sort/README.md) |
 | [Quick Sort](./quick-sort/README.md) | [Hash Table](./hash-table/README.md) |[Tree Intersection](./treeIntersection/README.md)  |
+| [Graphs](./graphs/README.md) |  |   |
 
 <!-- | col 3 is | right-aligned |    $1 | -->
